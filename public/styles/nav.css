@@ -1,0 +1,17 @@
+#logo{
+    font-family: Bungee;
+  }
+.nav-logo{
+    position: fixed;
+    top: 0px;
+    height: 120px;
+    background-color: #050001;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    width: 100%;
+    z-index: 999;
+    color: black;
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
