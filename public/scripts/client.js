@@ -29,23 +29,39 @@ const data = [
     }
   ]
 
-const renderTweets = function(tweets) {
-  // loops through tweets
-  // calls createTweetElement for each tweet
-  // takes return value and appends it to the tweets container
-  var $tweets_container = $(".tweet");
-  for(var tweet in tweets) {
-    var $tweet_article = createTweetElement(tweets[tweet]);
-    $tweets_container.append($tweet_article);
-  }
-  return $tweets_container;
-}
-
+  const renderTweets = function(tweets) {
+    // loops through tweets
+    // calls createTweetElement for each tweet
+    // takes return value and appends it to the tweets container
+    for (let tweet of tweets) {
+      let $tweet =createTweetElement(tweet);
+      $(document).ready(function() {
+        $('.container').append($tweet);
+      });
+    }
+  };
 const createTweetElement = function(tweet) {
-  let $tweet = $('<article>').addClass('tweet');
+  let $tweet = $(`<article class=“tweet”>
+  <header>	
+  <div>	
+     <img src=${tweet.user.avatars}>      
+     <h4>${tweet.user.name}</h4>
+  </div>	 
+   <div class="tweet-handle">	
+     <h3>${tweet.user.handle}</h3>	
+   </div>
+ </header>	
+ <span class="tweet-text">${tweet.content.text}</span>
+ <footer>	
+    <div>
+         <h6>${tweet.created_at}</h6> 
+    </div>
+    <div>
+         🏳️🔁💙
+       </div>    
+ </footer>
+</article>`).addClass('tweet');
   // ...
-  console.log($tweet);
-$('#tweets-container').append($tweet);
   return $tweet;
 }
 

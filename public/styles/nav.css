@@ -5,8 +5,8 @@
     position: fixed;
     top: 0px;
     height: 120px;
-    background-color: black;
-    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    background: rgb(27,0,36);
+    background: linear-gradient(90deg, rgba(27,0,36,0.676908263305322) 0%, rgba(121,9,78,0.9878326330532213) 100%, rgba(0,212,255,1) 100%);
     width: 100%;
     z-index: 999;
     color: black;
