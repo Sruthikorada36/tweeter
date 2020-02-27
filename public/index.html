@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
@@ -25,7 +26,12 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav id = "logo" class="nav-logo">
-      <span class="nav">tweeter</span>
+      <span>tweeter</span>
+      <div class="txt" > <span class="strn"> Write </span> a new tweet <br>
+      <span class="toggle-btn">      
+      <div class="scrl"><i class="fas fa-angle-double-down bounce"></i></div>
+    </div>
+      </span>
     </nav>
     <header id = "header">
       <div>
@@ -35,18 +41,19 @@
       <div>
           <h2>Sruthi Korada</h2>
       </div>
-  </header>
+  </header> <br> <br>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form Content-Type="application/x-www-form-urlencoded" action="/tweets" method="POST">
+          <span class="err-message"> </span>
+        <form id="submit" Content-Type="application/x-www-form-urlencoded" action="/tweets" method="POST">
           <textarea id="tweet-area" name="text" placeholder="What are you humming about?"></textarea>
           <input class="btn" type="submit" value="Tweet">
-          <span class="error"></span>
+          <span class="shrterr"> </span>
           <span class="counter">140</span>
         </form>
-      </section >
+      </section > 
+      <section class= "tweets-container" ></section>
     </main>
   </body>
 </html>

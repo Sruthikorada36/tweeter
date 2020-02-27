@@ -4,6 +4,9 @@
     overflow: hidden;
     border: none;
     border-bottom: 4px #545149 solid;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
   }
   
   .counter {
@@ -17,9 +20,16 @@
     color: white;
     font-size: 24px;
     padding: 5px 10px;
+    margin-bottom: 5%;
   }
-  .error {
-    color: red;
+  .shrterr,
+  .err-message{
+    color : red;
     font-size: 19px;
-    margin-left: 10px;
+    border: solid red;
+   margin-top: 30px;
+display: none;
+cursor: pointer;
   }
+  
+ 
