@@ -3,7 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300i,400,700i&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
     </div>
       </span>
     </nav>
-    <header id = "header">
+    <header class = "header">
       <div>
           <img src="/images/profile-hex.png">    
       </div>
@@ -48,9 +48,11 @@
           <span class="err-message"> </span>
         <form id="submit" Content-Type="application/x-www-form-urlencoded" action="/tweets" method="POST">
           <textarea id="tweet-area" name="text" placeholder="What are you humming about?"></textarea>
-          <input class="btn" type="submit" value="Tweet">
-          <span class="shrterr"> </span>
-          <span class="counter">140</span>
+          <div class="form-flex">
+            <input class="btn" type="submit" value="Tweet">
+            <span class="shrterr"> </span>
+            <span class="counter">140</span>
+          </div>
         </form>
       </section > 
       <section class= "tweets-container" ></section>

@@ -1,12 +1,21 @@
+.new-tweet{
+  margin-top: 5%;
+}
+
 #tweet-area {
   width: 100%;
   background-color: inherit;
   overflow: hidden;
   border: none;
   border-bottom: 4px #545149 solid;
-  margin-top: 60px;
+  margin-top: 75px;
   display: flex;
   justify-content: space-evenly;
+}
+
+.form-flex{
+  display: flex;
+  justify-content: space-between;
 }
   
   .counter {
@@ -27,9 +36,14 @@
     color : red;
     font-size: 19px;
     border: solid red;
-   margin-top: 30px;
+   margin-top: 70px;
 display: none;
 cursor: pointer;
   }
   
- 
+ /* making my static css into responsive designing */
+ @media only screen and (min-width: 1024px) {
+.new-tweet{
+  margin-top: 5%;
+}
+ }

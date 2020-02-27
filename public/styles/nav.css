@@ -1,14 +1,12 @@
 #logo{
     font-family: Bungee;
-    color: azure;
+    color: black;
     
   }
 .nav-logo{
     position: fixed;
     top: 0px;
     height: 120px;
-    background: rgb(0,36,36);
-    background: linear-gradient(90deg, rgba(0,36,36,0.676908263305322) 0%, rgba(1,22,25,1) 64%, rgba(1,17,20,1) 80%, rgba(1,17,21,1) 97%);
     width: 100%;
     z-index: 999;
     color: black;
@@ -16,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .toggle-btn { 
   display: flex;
@@ -72,4 +71,14 @@
   transform-origin: center bottom;
   transform: translate(0);
   animation-iteration-count: infinite;
+}
+/* making my static css into responsive designing */
+@media only screen and (min-width: 1024px) {
+  .nav-logo{
+    background: rgb(0,36,36);
+    background: linear-gradient(90deg, rgba(0,36,36,0.676908263305322) 0%, rgba(1,22,25,1) 64%, rgba(1,17,20,1) 80%, rgba(1,17,21,1) 97%);
+  }
+  #logo {
+    color: cornsilk;
+  }
 }

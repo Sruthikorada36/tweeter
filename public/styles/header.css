@@ -1,11 +1,10 @@
-#header{
+.header{
 height: 400px;
 width: 100%;
 flex-direction: column;
   display: flex;
   justify-content: space-evenly;
 text-align: center;
-margin-top: 120px;
 color: #FFFFFF;
 background-color: hsla(200,40%,30%,.4);
 	background-image:		
@@ -39,4 +38,12 @@ background-color: hsla(200,40%,30%,.4);
 			1000px 100%,
 			400px 0;
 		}
-	}
+  }
+   /* making my static css into responsive designing */
+  @media only screen and (min-width: 1024px) {
+   .header {
+    margin-top: 138px;
+    width: 60%;
+    margin-left: 5%;
+   }
+  }
