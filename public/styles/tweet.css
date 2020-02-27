@@ -1,11 +1,13 @@
-  .tweet {
-    border: 4px black solid;
-    opacity: 0.55;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding: 3%;
 
-  }
+  
+    .tweet {
+      border: 4px black solid;
+      opacity: 0.55;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      padding: 3%;
+  
+    }
   
   .tweet  header {
       align-content: center;

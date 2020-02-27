@@ -38,6 +38,7 @@ const escape =  function(str) {
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
+    $('.tweets-container').empty();
     for (let tweet of tweets) {
       let $tweet =createTweetElement(tweet);
       $(document).ready(function() {
@@ -82,8 +83,9 @@ function loadTweets() {
       renderTweets(tweetsArray);
     }
   });
+  
 }
-// loadTweets();
+ loadTweets();
 $(document).ready(function() {
   $(function() {
     //get the form.

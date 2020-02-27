@@ -1,13 +1,13 @@
 #tweet-area {
-    width: 100%;
-    background-color: inherit;
-    overflow: hidden;
-    border: none;
-    border-bottom: 4px #545149 solid;
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-evenly;
-  }
+  width: 100%;
+  background-color: inherit;
+  overflow: hidden;
+  border: none;
+  border-bottom: 4px #545149 solid;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
   
   .counter {
     float: right;
