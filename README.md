@@ -22,5 +22,4 @@ This repository is the starter code for the project: Students will fork and clon
 ## Final Product 
  !["screenshot description"](https://github.com/Sruthikorada36/tweeter/blob/master/docs/full%20screen.png)
  !["screenshot description"](https://github.com/Sruthikorada36/tweeter/blob/master/docs/tablet.png)
- !["screenshot description"](https://github.com/Sruthikorada36/tweeter/blob/master/docs/tweet.png)
  !["screenshot description"](https://github.com/Sruthikorada36/tweeter/blob/master/docs/scrl.png)
